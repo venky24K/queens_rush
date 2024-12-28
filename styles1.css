@@ -1,0 +1,246 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Language Button */
+.language-btn {
+    background-color: #f1f1f1;
+    color: #007BFF;
+    border: none;
+    padding: 0.5em;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #007BFF;
+}
+
+p, ul {
+    margin: 1rem 0;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    list-style-type: disc;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Language Modal */
+.language-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.language-modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 8px;
+}
+
+.language-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.language-list li {
+    margin: 8px 0;
+}
+
+.language-list a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #007BFF;
+}
+
+.language-list a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Language Modal Close Button */
+.close {
+    color: #aaa;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+
+/* Mobile Screens */
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile screens */
+    }
+    
+    .language-btn {
+        font-size: 0.8rem; /* Adjusted size for better visibility */
+        top: 1.2em; /* Slightly higher placement */
+        right: 0.5em;
+        padding: 0.4em 0.6em; /* Compact padding for smaller devices */
+        border-radius: 5px; /* Maintaining rounded corners */
+    }
+    
+    main {
+        margin: 1rem 0.5rem;
+        padding: 0.8rem; /* Added slight padding for a better layout */
+    }
+    
+    h2 {
+        font-size: 1.25rem; /* Consistent sizing with body content */
+        margin-bottom: 0.75rem;
+    }
+    
+    p, ul {
+        font-size: 0.9rem; /* Adjusted size for better readability on small screens */
+        margin: 0.75rem 0;
+    }
+
+    ul {
+        padding-left: 1rem; /* Compact indentation for bullet lists */
+    }
+
+    section {
+        padding: 1rem;
+    }
+    
+    .language-modal-content {
+        width: 85%; /* Optimized modal width for smaller screens */
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    header h1 {
+        font-size: 1.75rem; /* Slightly larger for tablet screens */
+    }
+    
+    .language-btn {
+        font-size: 1rem; /* Retaining prominence for easy interaction */
+        padding: 0.6em 0.8em; /* Balanced padding for larger screens */
+        top: 1.2em; 
+        right: 1em;
+        border-radius: 6px;
+    }
+    
+    main {
+        margin: 1.5rem auto;
+        padding: 1.2rem; /* Slightly increased padding for better spacing */
+        max-width: 700px; /* Restrict width for better readability */
+    }
+    
+    section {
+        padding: 1.2rem 1rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem; /* Enhanced heading size for tablet devices */
+        margin-bottom: 1rem;
+    }
+    
+    p, ul {
+        font-size: 1rem; /* Legible text size for tablets */
+        margin: 1rem 0;
+    }
+
+    ul {
+        padding-left: 1.25rem;
+    }
+
+    .language-modal-content {
+        width: 75%; /* Centered modal width for tablets */
+    }
+    
+    footer {
+        padding: 1.2rem 1.5rem; /* Balanced padding for larger screens */
+        font-size: 1rem; /* Consistent text size for footer content */
+    }
+}
